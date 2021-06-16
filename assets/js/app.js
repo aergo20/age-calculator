@@ -36,7 +36,7 @@ function calculate() {
     // check birthday or not
     if (day === currentDate && month === currentMonth) {
       let birthday = currentYear - year;
-      output.innerHTML = `Congratulation! Today Is your birthday your are <span class="year">${birthday}</span> Years Old. `;
+      output.innerHTML = `Parabéns! Hoje é seu aniversário de <span class="year">${birthday}</span> anos. `;
     } else {
 
       //  calculate the day 
@@ -57,10 +57,10 @@ function calculate() {
       }
       year = currentYear - year;
 
-      output.innerHTML = `Your Age : <span class="year">${year}</span> Year <span class="month">${month}</span> Month <span class="day">${day}</span> Days.`;
+      output.innerHTML = `Idade: <span class="year">${year}</span> anos, <span class="month">${month}</span> meses, <span class="day">${day}</span> dias completos.`;
     }
 
   } else {
-    alert("Please Input your Birthday");
+    alert("informe a data de nascimento");
   }
 }
